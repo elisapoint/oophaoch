@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://zeiyohphai.bojhorizon.com/sitemap.xml
